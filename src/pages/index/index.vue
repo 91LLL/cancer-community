@@ -1,40 +1,41 @@
 <template>
-	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
-		<view>
-			<text class="title">{{title}}</text>
-		</view>
-	</view>
+  <view class="content">
+    <input :type="text" placeholder="请输入内容" />
+    <u-button>月落</u-button>
+    <view class="logo"></view>
+    <view>
+      <text class="title">{{ title }}</text>
+    </view>
+  </view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				title: 'Hello'
-			}
-		},
-		onLoad() {
+export default {
+  data() {
+    return {
+      title: 'Hello'
+    }
+  },
+  onLoad() {
 
-		},
-		methods: {
+  },
+  methods: {
 
-		}
-	}
+  }
+}
 </script>
 
-<style>
+<style lang="scss">
 	.content {
-		display: flex;
+		display:  flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-	}
-
-	.logo {
+		.logo {
 		height: 200rpx;
 		width: 200rpx;
 		margin: 200rpx auto 50rpx auto;
+		}
 	}
 
 	.text-area {
